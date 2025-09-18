@@ -1,0 +1,24 @@
+{
+  "name": "giadachiar.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiadaChiar/GiadaChiar.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GiadaChiar/GiadaChiar.github.io/issues"
+  },
+  "homepage": "https://github.com/GiadaChiar/GiadaChiar.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
