@@ -12074,7 +12074,7 @@ body .profile-img {
   color: #000;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 300px) {
   .nav-link {
     position: relative;
   }
@@ -12091,10 +12091,24 @@ body .profile-img {
   .nav-link:hover::after {
     width: 100%;
   }
-  .nav-link .buttons {
+  .buttons {
     display: flex;
-    /* justify-content: space-around;
-     align-items: center;*/
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .buttons .btn.btn-info {
+    background-color: rgb(222.2, 91.8, 156.6);
+    margin: 0;
+    box-shadow: 2px 3px 2px rgb(85.6, 20.4, 52.8);
+    color: #fff;
+  }
+  .buttons .btn.btn-info:hover {
+    color: #000;
+  }
+  .description-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 footer p, footer body h1, body footer h1 {

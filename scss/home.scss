@@ -134,7 +134,7 @@ body{
 
 //schermi più grandi 
 
-@media (min-width: 700px) {
+@media (min-width: 300px) {
   // stili validi SOLO da 992px in su
     .nav-link {
         position: relative;
@@ -152,20 +152,34 @@ body{
 
         &:hover::after{
             width:100%;
+        }
     }
 
-    .buttons{
+    .buttons {
         display: flex;
-       /* justify-content: space-around;
-        align-items: center;*/
+        flex-direction: row; // mobile: pulsanti in colonna
+        justify-content: space-around; // spazio tra i pulsanti
 
+        .btn.btn-info {
+            background-color: $pink-400;
+            margin: 0; // margine mobile
+            box-shadow: 2px 3px 2px $pink-800;
+            color: #fff;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+    .description-home{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     
 }
 
 
 
-}
 
 
 footer{
