@@ -164,11 +164,17 @@ body{
             }
         }
 
-
-        
-
     }
 
+    //work 
+
+    #collapseExample2 .card-body {
+  background-color: transparent; /* rende lo sfondo trasparente */
+  box-shadow: none; /* opzionale: rimuove l’ombra */
+  border: none;     /* opzionale: rimuove il bordo */
+}
+
+   
 
     .profile-img{
         width: 200px;   // nuova larghezza

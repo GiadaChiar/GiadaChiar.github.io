@@ -12100,6 +12100,11 @@ body .container .under p:not(:last-child):not(:nth-child(2)), body .container .u
 body .container .under p:first-child, body .container .under h1:first-child, body .container .under h2:first-child, body .container .under h4:first-child {
   margin-top: -4px;
 }
+body #collapseExample2 .card-body {
+  background-color: transparent; /* rende lo sfondo trasparente */
+  box-shadow: none; /* opzionale: rimuove l’ombra */
+  border: none; /* opzionale: rimuove il bordo */
+}
 body .profile-img {
   width: 200px;
   height: auto;
