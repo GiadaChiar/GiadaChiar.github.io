@@ -66,6 +66,14 @@ body{
     }
 
 
+    hr{
+        border: none;
+    height: 2px;
+    background: vars.$purple-400;
+    margin: 2rem 0;
+    }
+
+
 
     p {
         background: linear-gradient(45deg, $indigo-100, $red-500, $pink-700);
@@ -91,6 +99,53 @@ body{
         font-size:vars.$font-size-title;
     }
 
+    h2{
+        @extend h1;
+        font-size:vars.$font-size-title2;
+    }
+
+    h4{
+        @extend h1;
+        font-size:vars.$font-size-title3;
+    }
+    
+
+    .container{
+        border:2px solid vars.$purple-400;
+        border-radius: 4px;
+        box-shadow: 0px 4px 10px vars.$shadow;
+        margin-bottom: 25px;
+
+        h4{
+            text-align: center;
+            border-bottom: 2px solid vars.$shadow;
+        }
+
+        .in-line{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+
+        .under{
+            min-width:40%;
+
+            p:not(:last-child):not(:nth-child(2)){
+                margin-bottom: -2px;
+            }
+
+            p:first-child{
+                margin-top: -4px;
+            }
+        }
+
+
+        
+
+    }
+
+
     .profile-img{
         width: 200px;   // nuova larghezza
         height: auto;  
@@ -101,6 +156,7 @@ body{
         box-shadow: 0px 4px 10px rgba(145, 11, 98, 0.8);
         object-fit: cover; 
         margin-bottom: 5%;
+        margin-top: 10%;
 
         &:hover{
             transform: scale(1.3);

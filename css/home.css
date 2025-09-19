@@ -214,7 +214,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, body h2, body h4, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -222,12 +222,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--bs-heading-color);
 }
 
-h1, .h1 {
+h1, body h2, body h4, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
 
 @media (min-width: 1200px) {
-  h1, .h1 {
+  h1, body h2, body h4, .h1 {
     font-size: 2.5rem;
   }
 }
@@ -266,7 +266,7 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p, body h1 {
+p, body h1, body h2, body h4 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -12334,7 +12334,14 @@ body .navbar.navbar-expand-lg.navbar-light .navbar-nav .nav-link:hover {
   width: 100%;
 }
 
-body p, body h1 {
+body hr {
+  border: none;
+  height: 2px;
+  background: #a9125b;
+  margin: 2rem 0;
+}
+
+body p, body h1, body h4, body h2 {
   background: linear-gradient(45deg, rgb(224.4, 207.2, 252.4), #dc3545, rgb(128.4, 30.6, 79.2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -12344,10 +12351,49 @@ body p, body h1 {
   font-size: 15px;
 }
 
-body h1 {
+body h1, body h4, body h2 {
   font-weight: 700;
   padding-top: 5%;
   font-size: 25px;
+}
+
+body h2 {
+  font-size: 22px;
+}
+
+body h4 {
+  font-size: 18px;
+}
+
+body .container {
+  border: 2px solid #a9125b;
+  border-radius: 4px;
+  box-shadow: 0px 4px 10px rgba(145, 11, 98, 0.8);
+  margin-bottom: 25px;
+}
+
+body .container h4 {
+  text-align: center;
+  border-bottom: 2px solid rgba(145, 11, 98, 0.8);
+}
+
+body .container .in-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+body .container .under {
+  min-width: 40%;
+}
+
+body .container .under p:not(:last-child):not(:nth-child(2)), body .container .under h1:not(:last-child):not(:nth-child(2)), body .container .under h2:not(:last-child):not(:nth-child(2)), body .container .under h4:not(:last-child):not(:nth-child(2)) {
+  margin-bottom: -2px;
+}
+
+body .container .under p:first-child, body .container .under h1:first-child, body .container .under h2:first-child, body .container .under h4:first-child {
+  margin-top: -4px;
 }
 
 body .profile-img {
@@ -12361,6 +12407,7 @@ body .profile-img {
   -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 5%;
+  margin-top: 10%;
 }
 
 body .profile-img:hover {
@@ -12397,12 +12444,12 @@ body .profile-img:hover {
   color: #000;
 }
 
-.animate__animated .animate__slideInLeft h1 {
+.animate__animated .animate__slideInLeft h1, .animate__animated .animate__slideInLeft body h2, body .animate__animated .animate__slideInLeft h2, .animate__animated .animate__slideInLeft body h4, body .animate__animated .animate__slideInLeft h4 {
   animation-delay: 0.5s;
   animation-duration: 1.5s;
 }
 
-.animate__animated .animate__slideInLeft p, .animate__animated .animate__slideInLeft body h1, body .animate__animated .animate__slideInLeft h1 {
+.animate__animated .animate__slideInLeft p, .animate__animated .animate__slideInLeft body h1, body .animate__animated .animate__slideInLeft h1, .animate__animated .animate__slideInLeft body h2, body .animate__animated .animate__slideInLeft h2, .animate__animated .animate__slideInLeft body h4, body .animate__animated .animate__slideInLeft h4 {
   animation-delay: 0.9;
   animation-duration: 1.5s;
 }
@@ -12421,7 +12468,7 @@ body .profile-img:hover {
   animation-duration: 1.5s;
 }
 
-footer p, footer body h1, body footer h1 {
+footer p, footer body h1, body footer h1, footer body h2, body footer h2, footer body h4, body footer h4 {
   border-bottom: 1px solid #a9125b;
   width: 100%;
   padding-bottom: 5%;
