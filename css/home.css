@@ -12365,6 +12365,27 @@ body h4 {
   font-size: 18px;
 }
 
+body .btn.btn-primary {
+  background-color: transparent;
+  color: #a9125b;
+  border: transparent;
+  font-size: 22px;
+}
+
+body .btn.btn-primary:hover {
+  background-color: transparent;
+  color: rgba(145, 11, 98, 0.8);
+  text-decoration: underline;
+  border: transparent;
+  font-size: 22px;
+}
+
+body #collapseExample .card-body {
+  background-color: transparent; /* rende lo sfondo trasparente */
+  box-shadow: none; /* opzionale: rimuove l’ombra */
+  border: none; /* opzionale: rimuove il bordo */
+}
+
 body .container {
   border: 2px solid #a9125b;
   border-radius: 4px;

@@ -109,7 +109,31 @@ body{
         font-size:vars.$font-size-title3;
     }
     
+//my.html 
 
+//bootsrap collapse
+//istruzione
+    .btn.btn-primary{
+        background-color:transparent;
+        color: vars.$purple-400;
+        border: transparent;
+        font-size: vars.$font-size-title2;
+        &:hover{
+            background-color:transparent;
+            color: vars.$shadow;
+            text-decoration: underline;
+            border: transparent;
+            font-size: vars.$font-size-title2;
+        }
+    }
+
+#collapseExample .card-body {
+  background-color: transparent; /* rende lo sfondo trasparente */
+  box-shadow: none; /* opzionale: rimuove l’ombra */
+  border: none;     /* opzionale: rimuove il bordo */
+}
+
+//istruzione
     .container{
         border:2px solid vars.$purple-400;
         border-radius: 4px;
