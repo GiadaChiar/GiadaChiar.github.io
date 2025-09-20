@@ -128,9 +128,9 @@ body{
     }
 
 #collapseExample .card-body {
-  background-color: transparent; /* rende lo sfondo trasparente */
-  box-shadow: none; /* opzionale: rimuove l’ombra */
-  border: none;     /* opzionale: rimuove il bordo */
+    background-color: transparent; 
+    box-shadow: none; 
+    border: none;     
 }
 
 //istruzione
@@ -243,6 +243,8 @@ body{
 
 }
 
+
+
 //how to program trasparence
 @keyframes fadeIn {
     0% {
@@ -253,11 +255,28 @@ body{
     }
 }
 
-.share_class_fadeIn{
-    opacity: 0;  
-    animation-delay: 1s;
-    animation-duration: 1.5s; 
+//imagine up-down float 
 
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.img-updown {
+    animation: upDown 2s ease-in-out infinite;
+}
+
+
+.share_class_fadeIn {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; /* mantiene visibile dopo */
 }
 
 .profile-img.animate__fadeIn {

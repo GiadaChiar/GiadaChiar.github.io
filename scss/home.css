@@ -12071,9 +12071,9 @@ body .btn.btn-primary:hover {
   font-size: 22px;
 }
 body #collapseExample .card-body {
-  background-color: transparent; /* rende lo sfondo trasparente */
-  box-shadow: none; /* opzionale: rimuove l’ombra */
-  border: none; /* opzionale: rimuove il bordo */
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 body .container {
   border: 2px solid #a9125b;
@@ -12166,10 +12166,24 @@ body .profile-img:hover {
     opacity: 1;
   }
 }
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.img-updown {
+  animation: upDown 2s ease-in-out infinite;
+}
+
 .share_class_fadeIn, .buttons .btn-primary.animate__fadeIn, .buttons .btn-info.animate__fadeIn, .profile-img.animate__fadeIn {
   opacity: 0;
+  animation-name: fadeIn;
   animation-delay: 1s;
   animation-duration: 1.5s;
+  animation-fill-mode: forwards; /* mantiene visibile dopo */
 }
 
 footer p, footer body h1, body footer h1, footer body h2, body footer h2, footer body h4, body footer h4 {
