@@ -175,6 +175,11 @@ body{
 
     
 }
+//button end of page report to skills page
+.btn.btn-info.skills_my-page{
+    width:65% ; 
+    
+}
 
 
 
@@ -189,7 +194,6 @@ body{
             background-color:transparent;
             color: vars.$shadow;
             border: transparent;
-            font-size: vars.$font-size-title3;
         }
     }
 
@@ -527,6 +531,9 @@ footer{
         align-items: center;
     }
     
+
+
+
 
 
 
