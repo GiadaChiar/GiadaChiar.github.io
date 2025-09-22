@@ -150,6 +150,34 @@ body{
     
 //my.html 
 
+
+//background image 
+//home background
+.container_my_background{
+    margin-top: 0%;
+    margin-bottom: 5%;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/323/925/72/matrix-background-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    /* niente ripetizione */
+    background-position: center;     /* centrata */
+    min-height: 30vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    .section-img-chi-sono{
+        background-color: transparent;
+
+    }
+    
+    border-bottom-left-radius:20% ;
+
+    
+}
+
+
+
 //bootsrap collapse
 //istruzione
     .btn.btn-primary{
@@ -260,6 +288,8 @@ body{
     .btn.btn-primary.btn-sm{
         background-color:vars.$purple-400;
         box-shadow: 2px 3px 2px vars.$shadow;
+        color:#fff;
+        margin-right: 15px;
 
 
         &:hover{
@@ -360,6 +390,11 @@ footer{
     }
 }
 
+//SKILLS
+#img-container_skills{
+    width: 300px;
+}
+
 
 
     
@@ -399,7 +434,17 @@ footer{
         flex-direction: row; // mobile: pulsanti in colonna
         justify-content: space-around; // spazio tra i pulsanti
 
-        .btn.btn-info {
+        /* .btn.btn-info {
+            background-color: $pink-400;
+            margin: 0; // margine mobile
+            box-shadow: 2px 3px 2px $pink-800;
+            color: #2e12a9;
+            &:hover {
+                color: $black;
+            }
+        }*/
+
+        /*.btn .btn-primary{
             background-color: $pink-400;
             margin: 0; // margine mobile
             box-shadow: 2px 3px 2px $pink-800;
@@ -407,6 +452,7 @@ footer{
             &:hover {
                 color: $black;
             }
+        }*/
         }
     }
     .description-home{
@@ -415,7 +461,7 @@ footer{
         align-items: center;
     }
     
-}
+
 
 
 
