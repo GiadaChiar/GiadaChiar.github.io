@@ -11989,6 +11989,39 @@ textarea.form-control-lg {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container_home_background {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/680/961/large_2x/abstract-technology-background-free-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; /* niente ripetizione */
+  background-position: center; /* centrata */
+  min-height: 30vh; /* almeno altezza piena viewport */
+  display: flex; /* utile se vuoi centratura verticale/orizzontale */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+  border-radius: 60%;
+  box-shadow: 0 0 8px 8px rgba(145, 11, 98, 0.8);
+}
+
+#description_home {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  width: 70%;
+}
+#description_home p, #description_home body h1, #description_home body h4, #description_home body h2, body #description_home h1, body #description_home h4, body #description_home h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+#description_home, #img_home {
+  background-color: transparent;
+}
+
 body {
   height: 100vh;
   background-color: #000;
@@ -12218,6 +12251,9 @@ footer .social-links a i {
   }
   .nav-link:hover::after {
     width: 100%;
+  }
+  #img-my_profile {
+    margin-top: 30%;
   }
   .buttons {
     display: flex;

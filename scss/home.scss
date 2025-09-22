@@ -12,7 +12,46 @@
     font-family:vars.$font-style1 ;
 }
 
+//home background
+.container_home_background{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/680/961/large_2x/abstract-technology-background-free-vector.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    /* niente ripetizione */
+    background-position: center;     /* centrata */
+    min-height: 30vh;               /* almeno altezza piena viewport */
+    display: flex;                   /* utile se vuoi centratura verticale/orizzontale */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:vars.$black;
+    border-radius: 60%;
+    box-shadow: 0 0 8px 8px vars.$shadow;
+    
+}
 
+#description_home{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 70%;
+
+    p{
+        font-size: vars.$font-text-p;
+        font-weight: 500;
+        margin-top: 2%;
+    }
+}
+
+//home imposition background for id
+#description_home , #img_home{
+    background-color: transparent;
+    
+
+}
+
+///general code
 body{
     height: 100vh;
     background-color:$black;
@@ -348,6 +387,11 @@ footer{
         &:hover::after{
             width:100%;
         }
+    }
+
+
+    #img-my_profile{
+        margin-top: 30%;
     }
 
     .buttons {
