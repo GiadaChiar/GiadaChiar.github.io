@@ -12116,9 +12116,8 @@ body .btn.btn-primary {
 body .btn.btn-primary:hover {
   background-color: transparent;
   color: rgba(145, 11, 98, 0.8);
-  text-decoration: underline;
   border: transparent;
-  font-size: 22px;
+  font-size: 18px;
 }
 body #collapseExample .card-body {
   background-color: transparent;
@@ -12242,6 +12241,8 @@ footer p, footer body h1, body footer h1, footer body h2, body footer h2, footer
   border-bottom: 1px solid #a9125b;
   width: 100%;
   padding-bottom: 5%;
+  font-size: 10px;
+  padding-top: 5%;
 }
 footer .social-links {
   display: flex;
@@ -12254,8 +12255,61 @@ footer .social-links a i {
   transition: color 0.3s;
 }
 
-#img-container_skills {
-  width: 300px;
+.scroll-container-main-skills {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  width: 100%;
+  scroll-padding: 10px;
+  gap: 20px;
+  /* Scrollbar */
+}
+.scroll-container-main-skills::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-container-main-skills::-webkit-scrollbar-thumb {
+  background-color: #a9125b;
+  border-radius: 4px;
+}
+.scroll-container-main-skills::-webkit-scrollbar-track {
+  background-color: rgb(222.2, 91.8, 156.6);
+  border-radius: 4px;
+}
+
+.container_skills {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  min-height: 30vh;
+  color: #111;
+  border: 2px solid #a9125b;
+  border-radius: 2%;
+  box-shadow: 0 0 5px 5px rgba(145, 11, 98, 0.8);
+}
+.container_skills .description-skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container_skills .description-skills-container .front-end-img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+}
+.container_skills .Competenze_skills {
+  margin-left: 2%;
+}
+.container_skills .Competenze_skills p, .container_skills .Competenze_skills body h1, body .container_skills .Competenze_skills h1, .container_skills .Competenze_skills body h2, body .container_skills .Competenze_skills h2, .container_skills .Competenze_skills body h4, body .container_skills .Competenze_skills h4 {
+  margin-left: 8%;
+}
+.container_skills .Competenze_skills button {
+  margin-bottom: 4%;
 }
 
 @media (min-width: 300px) {

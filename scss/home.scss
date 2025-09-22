@@ -188,9 +188,8 @@ body{
         &:hover{
             background-color:transparent;
             color: vars.$shadow;
-            text-decoration: underline;
             border: transparent;
-            font-size: vars.$font-size-title2;
+            font-size: vars.$font-size-title3;
         }
     }
 
@@ -375,6 +374,8 @@ footer{
         border-bottom: 1px solid vars.$purple-400;
         width: 100%;
         padding-bottom: 5%;
+        font-size: vars.$font-size-smaller;
+        padding-top: 5%;
     }
     .social-links{
         display: flex;
@@ -390,14 +391,79 @@ footer{
     }
 }
 
-//SKILLS
-#img-container_skills{
-    width: 300px;
+//SKILLS PAGE
+
+.scroll-container-main-skills {
+    display: flex;
+    flex-direction: row;     // o column se vuoi scroll verticale
+    overflow-x: auto;        // scroll orizzontale
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    width: 100%;
+    scroll-padding: 10px;    // spazio ai lati quando fai snap
+    gap: 20px;               // spazio tra i container
+
+
+     /* Scrollbar */
+    &::-webkit-scrollbar {
+        height: 8px;  
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color:vars.$purple-400;      
+        border-radius: 4px;          
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $pink-400;   
+        border-radius: 4px;
+    }
+    }
+
+
+
+.container_skills{
+    flex: 0 0 100%; 
+    scroll-snap-align: start;   // si “ancora” all’inizio
+    scroll-snap-stop: always; // forza lo snap
+    margin:0;
+    margin-top: 5%;
+    margin-bottom: 5%;  
+    min-height: 30vh;           
+    color:vars.$black;
+    border:2px solid vars.$purple-400;
+    border-radius: 2%;
+    box-shadow: 0 0 5px 5px vars.$shadow;
+
+    .description-skills-container {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .front-end-img {
+        width: 60%;             
+        max-width: 600px;       
+        height: auto;           
+        }
+    }
+
+    .Competenze_skills{
+        margin-left: 2%;
+
+        p{
+            margin-left: 8%;
+        }
+
+        button{
+            margin-bottom: 4%;
+        }
+    }
+
+    
 }
 
 
-
-    
 
 
 
