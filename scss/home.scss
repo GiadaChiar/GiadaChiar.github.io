@@ -89,7 +89,6 @@ body{
             justify-content: center;
             border-top: 1px solid vars.$purple-400;
 
-            
 
             .nav-link {
                 color: vars.$purple-400;
@@ -103,6 +102,13 @@ body{
         }
         }
     }
+
+.nav-item.nav-link.disabled {       
+    cursor: not-allowed;    
+    opacity: 1;      
+    text-decoration: line-through;
+}
+
 
 
     hr{

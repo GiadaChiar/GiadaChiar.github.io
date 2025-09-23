@@ -12064,6 +12064,11 @@ body .navbar.navbar-expand-lg.navbar-light .navbar-nav .nav-link:hover {
   background-color: rgba(145, 11, 98, 0.2);
   width: 100%;
 }
+body .nav-item.nav-link.disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  text-decoration: line-through;
+}
 body hr {
   border: none;
   height: 2px;
