@@ -19,51 +19,83 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Contatti</a>
+            <a class="navbar-brand" href="#">Chi Sono</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">Home</a>
-                    <a class="nav-item nav-link" href="my.html">Chi Sono</a>
+                    <a class="nav-item nav-link" href="index.html">home</a>
+                    <a class="nav-item nav-link" href="my.html">Chi sono</a>
                     <a class="nav-item nav-link" href="skills.html">Skills</a>
-                    <a class="nav-item nav-link" href="projects.html">Progetti</a>
+                    <a class="nav-item nav-link disabled" href="contacts.html">Contatti</a>
                 </div>
             </div>
         </nav>
     </header>
         <div class="description-home">
-            <h1 class="animate__animated animate__slideInLeft">Full-stack<br>Developer
+            <h1 class="animate__animated animate__slideInLeft">Contattami
             </h1>
-            <div class="section-img-home">
-                <img class = "profile-img animate__animated animate__fadeIn" src="img/foto_profilo_fake.jpg" alt="my profile picture">
+        </div>
+    
+        <!--forum boostrap-->
+        <form id="contactForm" class="form">
+            <div class="mb-3">
+                <label class="animate__animated animate__slideInLeft" for="name">Nominativo: *</label>
+                <input type="text" class="form-control" id="name" name="user_name"
+                    pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="Mario Rossi" required>
             </div>
-        </div>
-        <div class="buttons ">
-            <button type="button" class="btn btn-info animate__animated animate__fadeIn">Info</button>
-            <button type="button" class="btn btn-primary btn-sm animate__animated animate__fadeIn">Contattami</button>
-        </div>
-        <div>
-            <p class="animate__animated animate__slideInLeft"> 
-                Passione, creatività e tanta curiosità sono alla base del mio percorso come sviluppatore.
-            </p>
-            <p class="animate__animated animate__slideInLeft"> 
-                Amo trasformare idee in applicazioni concrete, unendo logica e design per offrire soluzioni complete.
-            </p>
-        </div>
-        
+
+            <div class="mb-3">
+                <label class="animate__animated animate__slideInLeft" for="company">Azienda :</label>
+                <input type="text" class="form-control" id="company" name="user_company"
+                    placeholder="Nome Azienda">
+            </div>
+
+            <div class="mb-3">
+                <label class="animate__animated animate__slideInLeft" for="phone">Telefono : *</label>
+                <input type="tel" class="form-control" id="phone" name="user_phone"
+                    placeholder="+393405466157" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="animate__animated animate__slideInLeft" for="email">Email : *</label>
+                <input type="email" class="form-control" id="email" name="user_email"
+                    placeholder="name@example.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="animate__animated animate__slideInLeft" for="subject">Soggetto :</label>
+                <input type="text" class="form-control" id="subject" name="user_subject"
+                    placeholder="Colloquio di lavoro">
+            </div>
+
+            <div class="mb-3">
+                <label class="animate__animated animate__slideInLeft" for="text-area">Testo : *</label>
+                <textarea class="form-control" id="text-area" name="message"
+                        placeholder="La contatto in merito.." required></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn-info invio_email animate__animated animate__fadeIn">Invia</button>
+            </div>
+        </form>
+
+
         <footer>
-            <p>&copy; 2025 Portfolio. All rights reserved</p>
+            <p class="right">&copy; 2025 Portfolio. All rights reserved</p>
             <div class="social-links"> 
                 <!--from font-awesome-->
-                <a href="#"><i class="fa-brands fa-github animate__animated animate__fadeIn"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp animate__animated animate__fadeIn"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram animate__animated animate__fadeIn"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook animate__animated animate__fadeIn"></i></a>
+                <a href="https://github.com/GiadaChiar/GiadaChiar.github.io" target="_blank"><i class="fa-brands fa-github animate__animated animate__fadeIn"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp animate__animated animate__fadeIn"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?hl=it#inbox?compose=new" target="_blank"><i class="fa-solid fa-envelope animate__animated animate__fadeIn"></i></a>
+                <a href="https://www.instagram.com/giady_55/" target="_blank"><i class="fa-brands fa-instagram animate__animated animate__fadeIn"></i></a> <!--disable for now, I have to create one-->
+                <a href="https://www.facebook.com/giada.chiara.142" target="_blank"><i class="fa-brands fa-facebook animate__animated animate__fadeIn"></i></a>
             </div>
         </footer>
+        <!--my js-->
+        <script src="js/style.js"></script>
     <!-- Bootstrap 5 JS (bundle con Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

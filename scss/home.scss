@@ -489,6 +489,46 @@ footer{
     
 }
 
+//contacts page
+.form{
+    margin-top: 5%;
+    margin-bottom: 5%;  
+    min-height: 20vh;  
+    background-color:$black;         
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+    label{
+        color:vars.$purple-400;
+        font-size: vars.$font-size-small;
+        font-weight: 500;
+    }
+
+    input, textarea{
+        background-color: $pink-100;
+        border: 1px solid vars.$purple-400;
+        box-shadow: 2px 3px 2px vars.$shadow;
+        color: $black;
+    }
+
+    input::placeholder, textarea::placeholder{
+        color: vars.$purple-400;
+        opacity: 0.7; /* opacità del placeholder */
+        font-size: vars.$font-size-smaller;
+    }
+
+    input:focus, textarea:focus{
+        border-color: vars.$shadow;
+        box-shadow: 0 0 5px vars.$shadow;
+        outline: none; /* rimuove il bordo di default */
+    }
+}
+
+
+
 
 
 
