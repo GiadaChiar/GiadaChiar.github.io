@@ -126,9 +126,25 @@ body{
     color: transparent; 
     font-weight: 500;
     font-size: vars.$font-size-small;
+    }
+
+    ul > li {
+        font-size: vars.$font-size-small;
+        list-style: disc;
+        list-style-position: outside; /* importantissimo! */
+        margin-left: 1em; /* se vuoi indentare */
+        color: $pink-400;
+
+    }
 
 
-    
+    a{
+        color:vars.$purple-400;
+        text-decoration: underline;
+
+        &:hover{
+                color:vars.$shadow;
+            }
     }
 
     h1{
@@ -263,8 +279,14 @@ body{
             transition: 2s;
         }
     }
+
+    
 }
 
+.btn.btn-primary.dropdown-toggle.info-extra{
+        font-size: vars.$font-size-small;
+        
+    }
 
 .share_class_zoom{
     transform: scale(1.3);
