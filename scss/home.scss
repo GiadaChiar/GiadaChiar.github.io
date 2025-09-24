@@ -18,10 +18,10 @@
     margin-bottom: 5%;
     background-image: url('https://static.vecteezy.com/system/resources/previews/008/680/961/large_2x/abstract-technology-background-free-vector.jpg');
     background-size: cover;
-    background-repeat: no-repeat;    /* niente ripetizione */
-    background-position: center;     /* centrata */
-    min-height: 30vh;               /* almeno altezza piena viewport */
-    display: flex;                   /* utile se vuoi centratura verticale/orizzontale */
+    background-repeat: no-repeat;    
+    background-position: center;     
+    min-height: 30vh;               
+    display: flex;                   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -617,8 +617,8 @@ body{
         margin-bottom: 5%;
         background-image: url('https://static.vecteezy.com/system/resources/previews/008/680/961/large_2x/abstract-technology-background-free-vector.jpg');
         background-size: cover;
-        background-repeat: no-repeat;    /* niente ripetizione */
-        background-position:left;     /* centrata */           /* almeno altezza piena viewport */
+        background-repeat: no-repeat;    
+        background-position:left;     
         display: flex;  
         max-width: 40%;
         max-height: 50%;   
