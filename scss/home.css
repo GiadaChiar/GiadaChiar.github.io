@@ -12265,7 +12265,7 @@ body .profile-img:hover {
 footer p, footer body h1, body footer h1, footer body h2, body footer h2, footer body h4, body footer h4 {
   border-bottom: 1px solid #a9125b;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   font-size: 10px;
   padding-top: 5%;
 }
@@ -12273,9 +12273,6 @@ footer .social-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-footer .social-links a:last-child {
-  margin-bottom: -20px;
 }
 footer .social-links a i {
   color: #a9125b;
@@ -12378,7 +12375,14 @@ footer .social-links a i {
   outline: none; /* rimuove il bordo di default */
 }
 
+body {
+  height: 80vh;
+}
+
 @media (min-width: 950px) {
+  body {
+    height: 80vh;
+  }
   .nav-link {
     position: relative;
     font-size: 25px;
@@ -12442,11 +12446,23 @@ footer .social-links a i {
     margin-left: 5%;
     margin-right: 5%;
   }
+  p, body h1, body h2, body h4 {
+    font-size: 22px !important;
+  }
+  .right {
+    font-size: 18px !important;
+  }
+  .container_my_background h1, .container_my_background body h2, body .container_my_background h2, .container_my_background body h4, body .container_my_background h4 {
+    font-size: 35px !important;
+  }
+  .profile-img {
+    width: 200px !important;
+    height: 200px !important;
+  }
   .big-desktop {
     display: flex;
   }
   .big-desktop .index-p p, .big-desktop .index-p body h1, body .big-desktop .index-p h1, .big-desktop .index-p body h2, body .big-desktop .index-p h2, .big-desktop .index-p body h4, body .big-desktop .index-p h4 {
-    font-size: 20px !important;
     margin-right: 10%;
     margin-left: 20%;
     margin-top: 15%;
@@ -12454,8 +12470,13 @@ footer .social-links a i {
   .big-desktop .index-p p:first-child, .big-desktop .index-p body h1:first-child, body .big-desktop .index-p h1:first-child, .big-desktop .index-p body h2:first-child, body .big-desktop .index-p h2:first-child, .big-desktop .index-p body h4:first-child, body .big-desktop .index-p h4:first-child {
     margin-top: 8% !important;
   }
-  footer .social-links {
-    font-size: 2.5rem !important;
+  .section-img-chi-sono {
+    margin-top: 8%;
+  }
+  footer .social-links a i {
+    color: #a9125b;
+    font-size: 1.9rem;
+    transition: color 0.3s;
   }
 }
 .description-home {

@@ -405,7 +405,7 @@ footer{
     p{
         border-bottom: 1px solid vars.$purple-400;
         width: 100%;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
         font-size: vars.$font-size-smaller;
         padding-top: 5%;
     }
@@ -413,10 +413,6 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items:center;
-
-        a:last-child{
-            margin-bottom: -20px;
-        }
 
         a i{
             color:vars.$purple-400;
@@ -539,13 +535,20 @@ footer{
 
 
 
+body{
+        height: 80vh;
+    }
 
 
-
-//schermi più grandi 
 
 @media (min-width: 950px) {
-  // stili validi SOLO da 992px in su
+  // stili validi SOLO da 992px in su{
+
+    body{
+        height: 80vh;
+
+        
+    }
     .nav-link {
         position: relative;
         font-size: 25px;
@@ -631,14 +634,29 @@ footer{
         
     }
 
-    
+    p{
+        font-size: vars.$font-size-title2  !important;
+    }
+    .right{
+        font-size: vars.$font-size-title3 !important;
+    }
+
+    .container_my_background h1 {
+        font-size: vars.$font-size-smal !important;
+    }
+
+    .profile-img{
+        width: 200px !important;  // dimensione ingrandita
+        height: 200px !important;
+    }
+
+
 
     .big-desktop{
         display: flex;
         .index-p{
             
             p{
-                font-size: 20px  !important;
                 margin-right: 10%;
                 margin-left: 20%;
                 margin-top: 15%;
@@ -646,13 +664,20 @@ footer{
             p:first-child{
                 margin-top: 8% !important;
             }
- 
         }
     }
 
+
+    .section-img-chi-sono{
+        margin-top: 8%;
+    }
+
     footer .social-links {
-        font-size: 2.5rem !important;
-        
+        a i{
+            color:vars.$purple-400;
+            font-size: 1.9rem;
+            transition: color 0.3s;
+        }
     }
 
 
