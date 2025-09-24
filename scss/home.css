@@ -11994,10 +11994,10 @@ textarea.form-control-lg {
   margin-bottom: 5%;
   background-image: url("https://static.vecteezy.com/system/resources/previews/008/680/961/large_2x/abstract-technology-background-free-vector.jpg");
   background-size: cover;
-  background-repeat: no-repeat; /* niente ripetizione */
-  background-position: center; /* centrata */
-  min-height: 30vh; /* almeno altezza piena viewport */
-  display: flex; /* utile se vuoi centratura verticale/orizzontale */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 30vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -12436,8 +12436,8 @@ body {
     margin-bottom: 5%;
     background-image: url("https://static.vecteezy.com/system/resources/previews/008/680/961/large_2x/abstract-technology-background-free-vector.jpg");
     background-size: cover;
-    background-repeat: no-repeat; /* niente ripetizione */
-    background-position: left; /* centrata */ /* almeno altezza piena viewport */
+    background-repeat: no-repeat;
+    background-position: left;
     display: flex;
     max-width: 40%;
     max-height: 50%;
@@ -12571,6 +12571,10 @@ body {
     flex-direction: column;
     gap: 5px;
   }
+  footer .right {
+    font-size: 15px !important;
+    text-align: right;
+  }
   footer .social-links a i {
     color: #a9125b;
     font-size: 1.9rem;
@@ -12583,12 +12587,6 @@ body {
 
 .btn-info.invio_email {
   font-size: 22px !important;
-}
-
-footer .social-links a i {
-  color: #a9125b;
-  font-size: 1.9rem;
-  transition: color 0.3s;
 }
 
 .description-home {
