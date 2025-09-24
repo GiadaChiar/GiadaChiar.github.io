@@ -12552,12 +12552,45 @@ body {
   .tooltip {
     display: none !important;
   }
+  .big-container-all {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .big-container-all .animate__animated.animate__slideInLeft {
+    font-size: 18px;
+  }
+  .big-container-all .big-contact-sx .mb-3,
+  .big-container-all .big-contact-dx .mb-3 {
+    width: 350px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
   footer .social-links a i {
     color: #a9125b;
     font-size: 1.9rem;
     transition: color 0.3s;
   }
 }
+.big-h1 {
+  font-size: 30px !important;
+}
+
+.btn-info.invio_email {
+  font-size: 22px !important;
+}
+
+footer .social-links a i {
+  color: #a9125b;
+  font-size: 1.9rem;
+  transition: color 0.3s;
+}
+
 .description-home {
   display: flex;
   justify-content: space-around;

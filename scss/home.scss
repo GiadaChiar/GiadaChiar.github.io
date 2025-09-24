@@ -765,24 +765,75 @@ body{
 
     .tooltip {
     display: none !important;
-}
-
-
-
-
-
-
-
-    
-    footer .social-links {
-        a i{
-            color:vars.$purple-400;
-            font-size: 1.9rem;
-            transition: color 0.3s;
-        }
     }
 
+
+    //forum
+    .big-container-all{
+        display: flex;
+        flex-direction: row;
+        gap: 20%;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+
+
+        .animate__animated.animate__slideInLeft{
+            font-size: vars.$font-size-title3;
+        }
+
+        // Selettore per i singoli div che contengono label + input
+        .big-contact-sx .mb-3,
+        .big-contact-dx .mb-3 {
+            width: 350px;          // larghezza fissa del campo
+            max-width: 100%;       // non supera la larghezza del genitore
+            display: flex;
+            flex-direction: column;
+            gap: 5px;              // distanza tra label e input
+        }
+
+        
+
+        
+    }
+
+    
+
+
+
+
+
+
+
+    footer {
+
+        .right {
+        font-size:vars.$font-size-small !important;
+        text-align: right; 
+    }
+
+
+        .social-links {
+            a i{
+                color:vars.$purple-400;
+                font-size: 1.9rem;
+                transition: color 0.3s;
+            }
+        }
+    }
+    
+
+
+
 }
+
+    .big-h1{
+        font-size: vars.$font-size-h1-big !important;
+    }
+
+    .btn-info.invio_email{
+        font-size: vars.$font-size-title2 !;
+    }
 
 
    

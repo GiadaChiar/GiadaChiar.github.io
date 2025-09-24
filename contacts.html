@@ -35,46 +35,55 @@
         </nav>
     </header>
         <div class="description-home">
-            <h1 class="animate__animated animate__slideInLeft">Contattami
+            <h1 class="big-h1 animate__animated animate__slideInLeft">Contattami
             </h1>
         </div>
     
         <!--forum boostrap-->
-        <form id="contactForm" class="form">
-            <div class="mb-3">
-                <label class="animate__animated animate__slideInLeft" for="name">Nominativo: *</label>
-                <input type="text" class="form-control" id="name" name="user_name" 
-                    pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="Mario Rossi" required>
-            </div>
+        <div id="contactForm" class="form">
+            <div class="big-container-all">
+                <div class="big-contact-sx">
+                    <div class="mb-3">
+                        <label class="animate__animated animate__slideInLeft" for="name">Nominativo: *</label>
+                        <input type="text" class="form-control" id="name" name="user_name" 
+                            pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$" placeholder="Mario Rossi" required>
+                    </div>
 
-            <div class="mb-3">
-                <label class="animate__animated animate__slideInLeft" for="company">Azienda :</label>
-                <input type="text" class="form-control" id="company" name="user_company"
-                    placeholder="Nome Azienda">
-            </div>
+                    <div class="mb-3">
+                        <label class="animate__animated animate__slideInLeft" for="company">Azienda :</label>
+                        <input type="text" class="form-control" id="company" name="user_company"
+                            placeholder="Nome Azienda">
+                    </div>
 
-            <div class="mb-3">
-                <label class="animate__animated animate__slideInLeft" for="phone">Telefono : *</label>
-                <input type="tel" class="form-control" id="phone" name="user_phone"
-                    placeholder="+393405466157" required>
-            </div>
+                    <div class="mb-3">
+                        <label class="animate__animated animate__slideInLeft" for="phone">Telefono : *</label>
+                        <input type="tel" class="form-control" id="phone" name="user_phone"
+                            placeholder="+393405466157" required>
+                    </div>
+                </div>
+                
 
-            <div class="mb-3">
-                <label class="animate__animated animate__slideInLeft" for="email">Email : *</label>
-                <input type="email" class="form-control" id="email" name="user_email"
-                    placeholder="name@example.com" required>
-            </div>
+                <div class="big-contact-dx">
+                    <div class="mb-3">
+                        <label class="animate__animated animate__slideInLeft" for="email">Email : *</label>
+                        <input type="email" class="form-control" id="email" name="user_email"
+                            placeholder="name@example.com" required>
+                    </div>
 
-            <div class="mb-3">
-                <label class="animate__animated animate__slideInLeft" for="subject">Soggetto :</label>
-                <input type="text" class="form-control" id="subject" name="user_subject"
-                    placeholder="Colloquio di lavoro">
-            </div>
+                    <div class="mb-3">
+                        <label class="animate__animated animate__slideInLeft" for="subject">Soggetto :</label>
+                        <input type="text" class="form-control" id="subject" name="user_subject"
+                            placeholder="Colloquio di lavoro">
+                    </div>
 
-            <div class="mb-3">
-                <label class="animate__animated animate__slideInLeft" for="text-area">Testo : *</label>
-                <textarea class="form-control" id="text-area" name="message"
-                        placeholder="La contatto in merito.." required></textarea>
+                    <div class="mb-3">
+                        <label class="animate__animated animate__slideInLeft" for="text-area">Testo : *</label>
+                        <textarea class="form-control" id="text-area" name="message"
+                                placeholder="La contatto in merito.." required></textarea>
+                    </div>
+                </div>
+
+
             </div>
 
             <div class="buttons">
