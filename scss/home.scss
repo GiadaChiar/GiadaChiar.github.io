@@ -490,6 +490,7 @@ footer{
 
         button{
             margin-bottom: 4%;
+            margin-left:5%;
         }
     }
 
@@ -718,36 +719,61 @@ body{
             flex: 1 1 auto;       
         }
 
-    .big-content-my {              // occupa tutto lo spazio disponibile a sinistra
-        justify-items: center;
-        p {
-        font-weight: 500;
-        margin-bottom: 10px;
-        }
-        ul {
-            margin-left: 20px;
-            li{
-                font-size: vars.$font-size-title3;
+        .big-content-my {              // occupa tutto lo spazio disponibile a sinistra
+            justify-items: center;
+            p {
+            font-weight: 500;
+            margin-bottom: 10px;
             }
-            
+            ul {
+                margin-left: 20px;
+                li{
+                    font-size: vars.$font-size-title3;
+                }
+                
+            }
+            > *:not(a) {
+                flex: 1 1 auto;       // occupano lo spazio disponibile
+                margin-bottom:5%;
+            }
         }
-        > *:not(a) {
-            flex: 1 1 auto;       // occupano lo spazio disponibile
-            margin-bottom:5%;
+
+        .big-img-my {
+            flex: 0 0 auto;           
+                img.front-end-img {
+                max-width: 300px;       // puoi regolare la larghezza
+                height: auto;
+                border-radius: 10px;    // opzionale
+                }
         }
     }
 
-    .big-img-my {
-        flex: 0 0 auto;           
-            img.front-end-img {
-            max-width: 300px;       // puoi regolare la larghezza
-            height: auto;
-            border-radius: 10px;    // opzionale
-            }
+    //skills
+
+        .scroll-container-main-skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+        align-items: flex-start;  
+        gap: 20px;                
+        flex-wrap: wrap;           
     }
+
+    .scroll-container-main-skills .container_skills {
+        flex: 0 0 45%;           
+    }
+
+    .tooltip {
+    display: none !important;
 }
 
 
+
+
+
+
+
+    
     footer .social-links {
         a i{
             color:vars.$purple-400;
@@ -756,16 +782,12 @@ body{
         }
     }
 
-
-
-
-
-
-
-
-
-
 }
+
+
+   
+
+
 
 
 

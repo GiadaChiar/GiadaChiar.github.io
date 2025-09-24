@@ -12335,6 +12335,7 @@ footer .social-links a i {
 }
 .container_skills .Competenze_skills button {
   margin-bottom: 4%;
+  margin-left: 5%;
 }
 
 .form {
@@ -12536,6 +12537,20 @@ body {
     max-width: 300px;
     height: auto;
     border-radius: 10px;
+  }
+  .scroll-container-main-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .scroll-container-main-skills .container_skills {
+    flex: 0 0 45%;
+  }
+  .tooltip {
+    display: none !important;
   }
   footer .social-links a i {
     color: #a9125b;
