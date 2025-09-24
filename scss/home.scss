@@ -134,6 +134,7 @@ body{
     font-size: vars.$font-size-small;
     }
 
+
     ul > li {
         font-size: vars.$font-size-small;
         list-style: disc;
@@ -638,11 +639,13 @@ body{
         font-size: vars.$font-size-title2  !important;
     }
     .right{
-        font-size: vars.$font-size-title3 !important;
+        font-size: vars.$font-size-title !important;
     }
 
+    
+
     .container_my_background h1 {
-        font-size: vars.$font-size-smal !important;
+        font-size: vars.$font-size-h1-big !important;
     }
 
     .profile-img{
@@ -671,6 +674,79 @@ body{
     .section-img-chi-sono{
         margin-top: 8%;
     }
+
+    .btn.btn-primary.dropdown-toggle{
+        font-size: vars.$font-size-h1-big;
+
+    }
+    .btn.btn-primary.dropdown-toggle.info-extra{
+        font-size: vars.$font-size-title3;
+    }
+
+    .under{
+            display:flex;
+            gap: 20px;
+            justify-content: flex-end;
+            align-items: center;
+            p{
+                margin-top:4%;
+            }
+        }
+    .under.exception{
+        display: inline;
+        margin-left: 10%;
+        .big-in-line{
+            display: flex;
+            gap:20px;
+            p{
+                margin-top:4%;
+            }
+            p:first-child{
+                margin-top: 4%;
+            }
+        }
+
+    }
+
+    .card-body.big {
+        display: flex;
+        flex-direction: row;        
+        gap: 15px; 
+        margin-left: 15%;  
+        margin-right: 10%;              
+        > *:not(a) {
+            flex: 1 1 auto;       
+        }
+
+    .big-content-my {              // occupa tutto lo spazio disponibile a sinistra
+        justify-items: center;
+        p {
+        font-weight: 500;
+        margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 20px;
+            li{
+                font-size: vars.$font-size-title3;
+            }
+            
+        }
+        > *:not(a) {
+            flex: 1 1 auto;       // occupano lo spazio disponibile
+            margin-bottom:5%;
+        }
+    }
+
+    .big-img-my {
+        flex: 0 0 auto;           
+            img.front-end-img {
+            max-width: 300px;       // puoi regolare la larghezza
+            height: auto;
+            border-radius: 10px;    // opzionale
+            }
+    }
+}
+
 
     footer .social-links {
         a i{

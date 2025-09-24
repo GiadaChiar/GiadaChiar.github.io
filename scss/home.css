@@ -12450,10 +12450,10 @@ body {
     font-size: 22px !important;
   }
   .right {
-    font-size: 18px !important;
+    font-size: 25px !important;
   }
   .container_my_background h1, .container_my_background body h2, body .container_my_background h2, .container_my_background body h4, body .container_my_background h4 {
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
   .profile-img {
     width: 200px !important;
@@ -12472,6 +12472,70 @@ body {
   }
   .section-img-chi-sono {
     margin-top: 8%;
+  }
+  .btn.btn-primary.dropdown-toggle {
+    font-size: 30px;
+  }
+  .btn.btn-primary.dropdown-toggle.info-extra {
+    font-size: 18px;
+  }
+  .under {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .under p, .under body h1, body .under h1, .under body h2, body .under h2, .under body h4, body .under h4 {
+    margin-top: 4%;
+  }
+  .under.exception {
+    display: inline;
+    margin-left: 10%;
+  }
+  .under.exception .big-in-line {
+    display: flex;
+    gap: 20px;
+  }
+  .under.exception .big-in-line p, .under.exception .big-in-line body h1, body .under.exception .big-in-line h1, .under.exception .big-in-line body h2, body .under.exception .big-in-line h2, .under.exception .big-in-line body h4, body .under.exception .big-in-line h4 {
+    margin-top: 4%;
+  }
+  .under.exception .big-in-line p:first-child, .under.exception .big-in-line body h1:first-child, body .under.exception .big-in-line h1:first-child, .under.exception .big-in-line body h2:first-child, body .under.exception .big-in-line h2:first-child, .under.exception .big-in-line body h4:first-child, body .under.exception .big-in-line h4:first-child {
+    margin-top: 4%;
+  }
+  .card-body.big {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+  .card-body.big > *:not(a) {
+    flex: 1 1 auto;
+  }
+  .card-body.big .big-content-my {
+    justify-items: center;
+  }
+  .card-body.big .big-content-my p, .card-body.big .big-content-my body h1, body .card-body.big .big-content-my h1, .card-body.big .big-content-my body h2, body .card-body.big .big-content-my h2, .card-body.big .big-content-my body h4, body .card-body.big .big-content-my h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .card-body.big .big-content-my ul {
+    margin-left: 20px;
+  }
+  .card-body.big .big-content-my ul li {
+    font-size: 18px;
+  }
+  .card-body.big .big-content-my > *:not(a) {
+    flex: 1 1 auto;
+    margin-bottom: 5%;
+  }
+  .card-body.big .big-img-my {
+    flex: 0 0 auto;
+  }
+  .card-body.big .big-img-my img.front-end-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
   }
   footer .social-links a i {
     color: #a9125b;
