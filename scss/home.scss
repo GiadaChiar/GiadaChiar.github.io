@@ -541,7 +541,7 @@ body{
 
 
 
-@media (min-width: 950px) {
+@media (min-width:950px) {
   //big screen
 
     body{
@@ -836,3 +836,45 @@ body{
     }
     
 
+
+
+
+    
+
+//smaller screen 
+
+@media (max-width: 600px) {
+
+    // Home e My Page - immagine profilo più piccola
+    .profile-img {
+        width: 100px !important;   
+        height: 100px !important;  
+    }
+
+    // HOME PAGE 
+    #description_home p,
+    .big-desktop .index-p p {
+        font-size: 1rem !important;  
+        line-height: 1.4rem;
+    }
+
+    // SKILLS PAGE 
+    .scroll-container-main-skills .container_skills {
+        flex: 0 0 100%;  
+        margin-bottom: 20px;
+    }
+
+    // SKILLS PAGE 
+    .scroll-container-main-skills .container_skills button {
+        width: 90%;           
+        font-size: 0.9rem;    
+        display: block;
+        margin: 5px auto;     
+    }
+
+    // SKILLS PAGE 
+    .scroll-container-main-skills .Competenze_skills p {
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+}

@@ -12593,4 +12593,36 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .profile-img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  #description_home p, #description_home body h1, body #description_home h1, #description_home body h2, body #description_home h2, #description_home body h4, body #description_home h4,
+  .big-desktop .index-p p,
+  .big-desktop .index-p body h1,
+  body .big-desktop .index-p h1,
+  .big-desktop .index-p body h2,
+  body .big-desktop .index-p h2,
+  .big-desktop .index-p body h4,
+  body .big-desktop .index-p h4 {
+    font-size: 1rem !important;
+    line-height: 1.4rem;
+  }
+  .scroll-container-main-skills .container_skills {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .scroll-container-main-skills .container_skills button {
+    width: 90%;
+    font-size: 0.9rem;
+    display: block;
+    margin: 5px auto;
+  }
+  .scroll-container-main-skills .Competenze_skills p, .scroll-container-main-skills .Competenze_skills body h1, body .scroll-container-main-skills .Competenze_skills h1, .scroll-container-main-skills .Competenze_skills body h2, body .scroll-container-main-skills .Competenze_skills h2, .scroll-container-main-skills .Competenze_skills body h4, body .scroll-container-main-skills .Competenze_skills h4 {
+    font-size: 1rem;
+    margin-left: 5%;
+  }
 }/*# sourceMappingURL=home.css.map */
