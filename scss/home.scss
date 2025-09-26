@@ -138,8 +138,8 @@ body{
     ul > li {
         font-size: vars.$font-size-small;
         list-style: disc;
-        list-style-position: outside; /* importantissimo! */
-        margin-left: 1em; /* se vuoi indentare */
+        list-style-position: outside; /* important */
+        margin-left: 1em; /* for indentatin */
         color: $pink-400;
 
     }
@@ -181,8 +181,8 @@ body{
     margin-bottom: 5%;
     background-image: url('https://c4.wallpaperflare.com/wallpaper/323/925/72/matrix-background-wallpaper-preview.jpg');
     background-size: cover;
-    background-repeat: no-repeat;    /* niente ripetizione */
-    background-position: center;     /* centrata */
+    background-repeat: no-repeat;    
+    background-position: center;     
     min-height: 30vh; 
     display: flex;
     justify-content: center;
@@ -207,7 +207,7 @@ body{
 
 
 //bootsrap collapse
-//istruzione
+//istruction
     .btn.btn-primary{
         background-color:transparent;
         color: vars.$purple-400;
@@ -226,7 +226,7 @@ body{
     border: none;     
 }
 
-//istruzione
+//istruction
     .container{
         border:2px solid vars.$purple-400;
         border-radius: 4px;
@@ -262,20 +262,18 @@ body{
     //work 
 
     #collapseExample2 .card-body {
-  background-color: transparent; /* rende lo sfondo trasparente */
-  box-shadow: none; /* opzionale: rimuove l’ombra */
-  border: none;     /* opzionale: rimuove il bordo */
-}
-
-   
+    background-color: transparent; 
+    box-shadow: none; 
+    border: none;     
+    }
 
     .profile-img{
-        width: 200px;   // nuova larghezza
+        width: 200px;   
         height: auto;  
-        width: 150px;           // larghezza del cerchio
-        height: 150px;          // altezza uguale alla larghezza
-        border-radius: 50%;     // rende l'immagine perfettamente circolare
-        border: 4px solid vars.$purple-400;  // bordo colorato (usa variabile Bootstrap Sass)
+        width: 150px;           //circle width
+        height: 150px;          // height=width
+        border-radius: 50%;     // circle
+        border: 4px solid vars.$purple-400;  // variable Bootstrap Sass)
         box-shadow: 0px 4px 10px rgba(145, 11, 98, 0.8);
         object-fit: cover; 
         margin-bottom: 5%;
@@ -349,10 +347,10 @@ body{
 //how to program trasparence
 @keyframes fadeIn {
     0% {
-    opacity: 0;       // invisibile all’inizio
+    opacity: 0;       // invisible at start
     }
     100% {
-        opacity: 1;       // completamente visibile alla fine
+        opacity: 1;       // end visible
     }
 }
 
@@ -377,7 +375,7 @@ body{
     animation-name: fadeIn;
     animation-delay: 1s;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards; /* mantiene visibile dopo */
+    animation-fill-mode: forwards; /* visible */
 }
 
 .profile-img.animate__fadeIn {
@@ -428,13 +426,13 @@ footer{
 
 .scroll-container-main-skills {
     display: flex;
-    flex-direction: row;     // o column se vuoi scroll verticale
-    overflow-x: auto;        // scroll orizzontale
+    flex-direction: row;     // orizontal scroll
+    overflow-x: auto;        
     scroll-snap-type: x mandatory;
     overflow-y: hidden;
     width: 100%;
-    scroll-padding: 10px;    // spazio ai lati quando fai snap
-    gap: 20px;               // spazio tra i container
+    scroll-padding: 10px;    
+    gap: 20px;               // space between
 
 
      /* Scrollbar */
@@ -457,8 +455,8 @@ footer{
 
 .container_skills{
     flex: 0 0 100%; 
-    scroll-snap-align: start;   // si “ancora” all’inizio
-    scroll-snap-stop: always; // forza lo snap
+    scroll-snap-align: start;   // yest at start
+    scroll-snap-stop: always; // forze snap
     margin:0;
     margin-top: 5%;
     margin-bottom: 5%;  
@@ -524,14 +522,14 @@ footer{
 
     input::placeholder, textarea::placeholder{
         color: vars.$purple-400;
-        opacity: 0.7; /* opacità del placeholder */
+        opacity: 0.7; /* opacity placeholder */
         font-size: vars.$font-size-smaller;
     }
 
     input:focus, textarea:focus{
         border-color: vars.$shadow;
         box-shadow: 0 0 5px vars.$shadow;
-        outline: none; /* rimuove il bordo di default */
+        outline: none; /* remouve border default */
     }
 }
 
@@ -544,7 +542,7 @@ body{
 
 
 @media (min-width: 950px) {
-  // stili validi SOLO da 992px in su{
+  //big screen
 
     body{
         height: 80vh;
@@ -586,12 +584,12 @@ body{
 
     .buttons {
         display: flex;
-        flex-direction: row; // mobile: pulsanti in colonna
-        justify-content: space-around; // spazio tra i pulsanti
+        flex-direction: row; 
+        justify-content: space-around; 
 
         /* .btn.btn-info {
             background-color: $pink-400;
-            margin: 0; // margine mobile
+            margin: 0; 
             box-shadow: 2px 3px 2px $pink-800;
             color: #2e12a9;
             &:hover {
@@ -650,7 +648,7 @@ body{
     }
 
     .profile-img{
-        width: 200px !important;  // dimensione ingrandita
+        width: 200px !important;  // big 
         height: 200px !important;
     }
 
@@ -719,7 +717,7 @@ body{
             flex: 1 1 auto;       
         }
 
-        .big-content-my {              // occupa tutto lo spazio disponibile a sinistra
+        .big-content-my {              
             justify-items: center;
             p {
             font-weight: 500;
@@ -733,7 +731,7 @@ body{
                 
             }
             > *:not(a) {
-                flex: 1 1 auto;       // occupano lo spazio disponibile
+                flex: 1 1 auto;       // all the space
                 margin-bottom:5%;
             }
         }
@@ -741,9 +739,9 @@ body{
         .big-img-my {
             flex: 0 0 auto;           
                 img.front-end-img {
-                max-width: 300px;       // puoi regolare la larghezza
+                max-width: 300px;       
                 height: auto;
-                border-radius: 10px;    // opzionale
+                border-radius: 10px;    
                 }
         }
     }
@@ -782,14 +780,14 @@ body{
             font-size: vars.$font-size-title3;
         }
 
-        // Selettore per i singoli div che contengono label + input
+        // Set containers label + input
         .big-contact-sx .mb-3,
         .big-contact-dx .mb-3 {
-            width: 350px;          // larghezza fissa del campo
-            max-width: 100%;       // non supera la larghezza del genitore
+            width: 350px;          
+            max-width: 100%;       
             display: flex;
             flex-direction: column;
-            gap: 5px;              // distanza tra label e input
+            gap: 5px;              
         }
 
         
@@ -798,12 +796,6 @@ body{
     }
 
     
-
-
-
-
-
-
 
     footer {
 
@@ -834,13 +826,6 @@ body{
     .btn-info.invio_email{
         font-size: vars.$font-size-title2 !important;
     }
-
-
-   
-
-
-
-
 
 
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*personalizzo i valori di bootsrap*/
+/*how to change colours from bootsrap*/
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -12087,8 +12087,8 @@ body p, body h1, body h4, body h2 {
 body ul > li {
   font-size: 15px;
   list-style: disc;
-  list-style-position: outside; /* importantissimo! */
-  margin-left: 1em; /* se vuoi indentare */
+  list-style-position: outside; /* important */
+  margin-left: 1em; /* for indentatin */
   color: rgb(222.2, 91.8, 156.6);
 }
 body a {
@@ -12114,8 +12114,8 @@ body .container_my_background {
   margin-bottom: 5%;
   background-image: url("https://c4.wallpaperflare.com/wallpaper/323/925/72/matrix-background-wallpaper-preview.jpg");
   background-size: cover;
-  background-repeat: no-repeat; /* niente ripetizione */
-  background-position: center; /* centrata */
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 30vh;
   display: flex;
   justify-content: center;
@@ -12171,9 +12171,9 @@ body .container .under p:first-child, body .container .under h1:first-child, bod
   margin-top: -4px;
 }
 body #collapseExample2 .card-body {
-  background-color: transparent; /* rende lo sfondo trasparente */
-  box-shadow: none; /* opzionale: rimuove l’ombra */
-  border: none; /* opzionale: rimuove il bordo */
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
 }
 body .profile-img {
   width: 200px;
@@ -12259,7 +12259,7 @@ body .profile-img:hover {
   animation-name: fadeIn;
   animation-delay: 1s;
   animation-duration: 1.5s;
-  animation-fill-mode: forwards; /* mantiene visibile dopo */
+  animation-fill-mode: forwards; /* visible */
 }
 
 footer p, footer body h1, body footer h1, footer body h2, body footer h2, footer body h4, body footer h4 {
@@ -12362,18 +12362,18 @@ footer .social-links a i {
 }
 .form input::-moz-placeholder, .form textarea::-moz-placeholder {
   color: #a9125b;
-  opacity: 0.7; /* opacità del placeholder */
+  opacity: 0.7; /* opacity placeholder */
   font-size: 10px;
 }
 .form input::placeholder, .form textarea::placeholder {
   color: #a9125b;
-  opacity: 0.7; /* opacità del placeholder */
+  opacity: 0.7; /* opacity placeholder */
   font-size: 10px;
 }
 .form input:focus, .form textarea:focus {
   border-color: rgba(145, 11, 98, 0.8);
   box-shadow: 0 0 5px rgba(145, 11, 98, 0.8);
-  outline: none; /* rimuove il bordo di default */
+  outline: none; /* remouve border default */
 }
 
 body {
@@ -12414,7 +12414,7 @@ body {
     justify-content: space-around;
     /* .btn.btn-info {
         background-color: $pink-400;
-        margin: 0; // margine mobile
+        margin: 0; 
         box-shadow: 2px 3px 2px $pink-800;
         color: #2e12a9;
         &:hover {
